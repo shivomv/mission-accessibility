@@ -3,10 +3,13 @@ import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AdminNav from '../adminComponent/AdminNav';
 import PrivateRoute from '../../Security/PrivateRoute';
-// import Page404 from '../../Pages/Error/Page404';
+import './AdminLayout.css'; // Import the CSS file for layout styling
+import SideNav from '../adminComponent/SideNav';
 
 // Lazy loading import for all components
 const AdminDashboard = React.lazy(() => import('./../AdminPages/AdminDashboard'));
+const ManagePages = React.lazy(() => import('../AdminPages/ManagePages/ManagePages'));
+const NavManagement = React.lazy(() => import('../AdminPages/ManagePages/ManageComponents/NavManagement'));
 // const AdminSettings = React.lazy(() => import('../Pages/Admin/Settings'));
 // Add more admin routes as needed
 
@@ -20,18 +23,22 @@ const Spinner = () => (
 
 const AdminLayout = ({ isAuthenticated }) => {
     return (
-        <>
-            <AdminNav />
-            <Suspense fallback={<Spinner />}>
-                <Routes>
-                    <Route path="/" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminDashboard} />} />
-                    {/* <Route path="/admin/settings" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminSettings} />} /> */}
-                    {/* Add more admin routes here */}
-                    {/* <Route path="*" element={<Page404 />} /> */}
-                </Routes>
-            </Suspense>
-           
-        </>
+        <div className="d-flex bg-white">
+            <SideNav />
+            <div className="content-container">
+                <AdminNav />
+                <Suspense fallback={<Spinner />}>
+                    <Routes>
+                        <Route path="/" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminDashboard} />} />
+                        <Route path="/manage-pages" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManagePages} />} />
+                        <Route path="/manage-nav" element={<PrivateRoute isAuthenticated={isAuthenticated} element={NavManagement} />} />
+                        {/* <Route path="/admin/settings" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminSettings} />} /> */}
+                        {/* Add more admin routes here */}
+                        {/* <Route path="*" element={<Page404 />} /> */}
+                    </Routes>
+                </Suspense>
+            </div>
+        </div>
     );
 };
 

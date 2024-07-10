@@ -1,0 +1,14 @@
+/* src/layouts/AdminLayout.css */
+.d-flex {
+    display: flex;
+}
+
+.content-container {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#sidebar-wrapper {
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
