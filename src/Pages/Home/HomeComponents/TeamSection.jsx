@@ -6,9 +6,9 @@ const TeamSection = () => {
         "sectionDescription": "Learn more about the dedicated educators who make a difference in our community.",
         "members": [
             { 
-                "name": "John Doe", 
-                "designation": "Math member", 
-                "image": "img/team-1.jpg", 
+                "name": "Name", 
+                "designation": "designation", 
+                "image": "https://placehold.co/400x400", 
                 "social": { 
                     "facebook": "#", 
                     "twitter": "#", 
@@ -16,9 +16,9 @@ const TeamSection = () => {
                 } 
             },
             { 
-                "name": "Jane Smith", 
-                "designation": "Science member", 
-                "image": "img/team-2.jpg", 
+                "name": "Name", 
+                "designation": "designation",  
+                "image": "https://placehold.co/400x400", 
                 "social": { 
                     "facebook": "#", 
                     "twitter": "#", 
@@ -26,9 +26,9 @@ const TeamSection = () => {
                 } 
             },
             { 
-                "name": "Michael Johnson", 
-                "designation": "English member", 
-                "image": "img/team-3.jpg", 
+                "name": "Name", 
+                "designation": "designation", 
+                "image": "https://placehold.co/400x400", 
                 "social": { 
                     "facebook": "#", 
                     "twitter": "#", 

@@ -25,12 +25,12 @@ const footerData = {
         { title: "Terms & Condition", url: "#" }
     ],
     photoGallery: [
-        { src: "img/classes-1.jpg", alt: "Class 1" },
-        { src: "img/classes-2.jpg", alt: "Class 2" },
-        { src: "img/classes-3.jpg", alt: "Class 3" },
-        { src: "img/classes-4.jpg", alt: "Class 4" },
-        { src: "img/classes-5.jpg", alt: "Class 5" },
-        { src: "img/classes-6.jpg", alt: "Class 6" }
+        { src: "https://placehold.co/400x400", alt: "Class 1" },
+        { src: "https://placehold.co/400x400", alt: "Class 2" },
+        { src: "https://placehold.co/400x400", alt: "Class 3" },
+        { src: "https://placehold.co/400x400", alt: "Class 4" },
+        { src: "https://placehold.co/400x400", alt: "Class 5" },
+        { src: "https://placehold.co/400x400", alt: "Class 6" }
     ],
     newsletterText: "Dolor amet sit justo amet elitr clita ipsum elitr est."
 };

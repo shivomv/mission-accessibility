@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   const callToActionData = {
@@ -6,8 +7,8 @@ const CallToAction = () => {
     description:
       'Together, we can provide essential support and education to those in need. Become a part of our mission and help create a brighter future for all.',
     buttonText: 'Get Involved Now',
-    buttonLink: '#',
-    imageSrc: 'img/call-to-action.jpg',
+    buttonLink: '/contact',
+    imageSrc: 'https://placehold.co/400x400',
     imageAlt: 'Call to Action Image'
   };
 
@@ -30,10 +31,10 @@ const CallToAction = () => {
               <div className="h-100 d-flex flex-column justify-content-center p-5">
                 <h1 className="mb-4">{callToActionData.title}</h1>
                 <p className="mb-4">{callToActionData.description}</p>
-                <a className="btn btn-primary py-3 px-5" href={callToActionData.buttonLink}>
+                <Link className="btn btn-primary py-3 px-5" to={callToActionData.buttonLink}>
                   {callToActionData.buttonText}
                   <i className="fa fa-arrow-right ms-2"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

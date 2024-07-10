@@ -7,6 +7,7 @@ import TeamSection from './HomeComponents/TeamSection';
 import TestimonialSection from './HomeComponents/TestimonialSection';
 import ContactForm from './HomeComponents/ContactForm';
 import SocialMediaFeed from './HomeComponents/SocialMediaFeed'; // Import the SocialMediaFeed component
+import SuccessStories from './HomeComponents/SuccessStories';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                 <MissionSection />
                 <AboutSection />
                 <CallToAction />
+                <SuccessStories/>
                 <TeamSection />
                 <SocialMediaFeed />
                 <TestimonialSection />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
     
@@ -9,13 +10,13 @@ const AboutSection = () => {
                     <div className="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <img src="img/about-1.jpg" alt="" className="img-fluid w-75 rounded-circle bg-light p-3" />
+                                <img src="https://placehold.co/400x400" alt="" className="img-fluid w-75 rounded-circle bg-light p-3" />
                             </div>
                             <div className="col-6 text-start" style={{ marginTop: '-150px' }}>
-                                <img src="img/about-2.jpg" alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />
+                                <img src="https://placehold.co/400x400" alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />
                             </div>
                             <div className="col-6 text-end" style={{ marginTop: '-150px' }}>
-                                <img src="img/about-3.jpg" alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />
+                                <img src="https://placehold.co/400x400" alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />
                             </div>
                         </div>
                     </div>
@@ -25,7 +26,7 @@ const AboutSection = () => {
                         <p className="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
                         <div className="row g-4 align-items-center justify-content-end">
                             <div className="col-sm-6">
-                                <a href="" className="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                                <Link to='/about' className="btn btn-primary rounded-pill py-3 px-5">Read More</Link>
                             </div>
                            
                         </div>

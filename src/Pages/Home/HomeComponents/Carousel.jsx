@@ -6,13 +6,13 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Carousel = () => {
   const items = [
     {
-      imgSrc: 'img/carousel-1.jpg',
-      title: 'The Best Kindergarten School For Your Child',
+      imgSrc: 'img/ladyofjustice.jpg',
+      title: 'Mission Accessibility',
       description: 'Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.',
     },
     {
-      imgSrc: 'img/carousel-2.jpg',
-      title: 'Make A Brighter Future For Your Child',
+      imgSrc: 'img/justice.jpg',
+      title: 'Mission Accessibility',
       description: 'Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.',
     },
   ];
@@ -28,8 +28,8 @@ const Carousel = () => {
         autoplayTimeout={5000} // Autoplay interval in milliseconds (5 seconds)
       >
         {items.map((item, index) => (
-          <div className="owl-carousel-item position-relative" key={index}>
-            <img className="img-fluid" src={item.imgSrc} alt="" />
+          <div className="owl-carousel-item position-relative" key={index} style={{height:"70vh", overflow:'hidden'}} >
+            <img className="img-fluid" src={item.imgSrc} alt=""/>
             <div
               className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
               style={{ background: 'rgba(0, 0, 0, .2)' }}

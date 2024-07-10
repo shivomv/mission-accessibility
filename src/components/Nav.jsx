@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
       <NavLink to="/" className="navbar-brand">
-        <h1 className="m-0 text-primary text-uppercase"><i className="fa fa-book-reader me-3"></i>mission accessibility</h1>
+        <h1 className="m-0 text-primary text-uppercase">Logo</h1>
       </NavLink>
       <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span className="navbar-toggler-icon"></span>

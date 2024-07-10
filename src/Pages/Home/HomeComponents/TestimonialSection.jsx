@@ -11,21 +11,21 @@ const testimonialData = {
   testimonials: [
     {
       text: "Their support and dedication have transformed our community. We are forever grateful.",
-      img: 'img/testimonial-1.jpg',
-      name: "Alice Brown",
-      role: "Community Member"
+      img: 'https://placehold.co/400x400',
+      name: "Name",
+      role: "Role"
     },
     {
       text: "Volunteering here has been a life-changing experience. The impact we make is incredible.",
-      img: 'img/testimonial-2.jpg',
-      name: "John Smith",
-      role: "Volunteer"
+      img: 'https://placehold.co/400x400',
+      name: "Name",
+      role: "Role"
     },
     {
       text: "Partnering with this NGO has enabled us to reach and support more people in need.",
-      img: 'img/testimonial-3.jpg',
-      name: "Emily Davis",
-      role: "Partner Organization"
+      img: 'https://placehold.co/400x400',
+      name: "Name",
+      role: "Role"
     }
   ]
 };
