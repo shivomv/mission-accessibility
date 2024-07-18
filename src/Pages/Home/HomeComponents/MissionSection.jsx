@@ -3,7 +3,7 @@ import React from 'react'
 const MissionSection = () => {
     const missionData = {
         title: 'Enhancing Accessibility for the Visually Impaired',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: '',
         missions: [
             { title: 'Audio Books & Braille', details: 'Providing accessible reading materials through audio books and Braille.', icon: 'fa fa-book-reader', color: 'primary', delay: '0.1s' },
             { title: 'Assistive Technology', details: 'Developing and distributing assistive devices for independent living.', icon: 'fa fa-wheelchair', color: 'success', delay: '0.3s' },

@@ -5,11 +5,11 @@ const CallToAction = () => {
   const callToActionData = {
     title: 'Join Us in Making a Difference',
     description:
-      'Together, we can provide essential support and education to those in need. Become a part of our mission and help create a brighter future for all.',
+      'Together, we can provide essential support and help to those in need. Become a part of our mission and help create a brighter future for all.',
     buttonText: 'Get Involved Now',
     buttonLink: '/contact',
-    imageSrc: 'https://placehold.co/400x400',
-    imageAlt: 'Call to Action Image'
+    imageSrc: 'img/JoinUs.jpeg',
+    imageAlt: 'Join Us in Making a Difference'
   };
 
   return (

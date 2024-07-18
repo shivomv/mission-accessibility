@@ -22,7 +22,7 @@ const ContactForm = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100 rounded"
-                  src="https://placehold.co/400x400"
+                  src="img/ContactUs.jpg"
                   style={{ objectFit: "cover" }}
                   alt="Make Appointment"
                 />

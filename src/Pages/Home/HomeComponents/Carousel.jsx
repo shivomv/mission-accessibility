@@ -2,18 +2,19 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
   const items = [
     {
       imgSrc: 'img/ladyofjustice.jpg',
       title: 'Mission Accessibility',
-      description: 'Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.',
+      description: 'Aiming to eliminate the barriers faced by persons with disabilities and ensure their full and effective participation.',
     },
     {
       imgSrc: 'img/justice.jpg',
       title: 'Mission Accessibility',
-      description: 'Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.',
+      description: 'Serving as a platform for persons with disabilities and their organizations to come together and collectively find a way forward to address the biggest challenges being faced by persons with disabilities.',
     },
   ];
 
@@ -43,18 +44,18 @@ const Carousel = () => {
                     <p className="fs-5 fw-medium text-white mb-4 pb-2">
                       {item.description}
                     </p>
-                    <a
-                      href=""
+                    <Link
+                      to="/about"
                       className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft"
                     >
                       Learn More
-                    </a>
-                    <a
+                    </Link>
+                    {/* <a
                       href=""
                       className="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight"
                     >
                       Our Classes
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

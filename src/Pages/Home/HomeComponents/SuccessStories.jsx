@@ -6,26 +6,26 @@ import "./SuccessStories.css"; // Import custom CSS for truncation
 const SuccessStories = () => {
   const stories = [
     {
-      img: "https://placehold.co/600x400",
-      title: "Story 1",
+      img: "https://www.hindustantimes.com/ht-img/img/2023/11/09/550x309/The-Delhi-high-court---Mint-Photo-_1699533470994.jpg",
+      title: "Delhi HC issues notice over plea seeking to make Rapido app disabled friendly",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero lo loreem20 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nemo incidunt nam sapiente voluptatum explicabo odit facilis, nisi sint dolor?",
-      link: "/story-1",
+        "The Delhi high court on Thursday issued notice in a plea seeking to make Rapido’s mobile ride application disabled friendly. A bench of justice Subramonium Prasad sought response from the Roppen Transportation Services Pvt Ltd’s Rapido and the Centre by 20 December 2023 in the plea filed by corporate lawyer and disability rights activist Amar Jain.",
+      link: "https://www.hindustantimes.com/cities/delhi-news/delhi-hc-issues-notice-over-plea-seeking-to-make-rapido-app-disabled-friendly-101699533473328.html",
     },
     {
-      img: "https://placehold.co/600x400",
-      title: "Story 2",
+      img: "https://images.indianexpress.com/2023/08/Disability.jpg?w=389",
+      title: "In law universities and beyond, disability education is woefully lacking",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero lorem21Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nemo incidunt nam sapiente",
-      link: "/story-2",
+        "One of the drawbacks of the systemic absence of such conversations on disability in course curriculums is that it instils students with an incorrect conceptual understanding of disability. Integrating it in courses from the get-go will lead to a change in the mindsets of professionals who are behind policy, legislation, infrastructure.",
+      link: "https://indianexpress.com/article/opinion/columns/law-universities-beyond-disability-education-woefully-lacking-8899504/lite/",
     },
-    {
-      img: "https://placehold.co/600x400",
-      title: "Story 2",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero lorem21Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nemo incidunt nam sapiente",
-      link: "/story-2",
-    },
+    // {
+    //   img: "https://placehold.co/600x400",
+    //   title: "Story 2",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero lorem21Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nemo incidunt nam sapiente",
+    //   link: "/story-2",
+    // },
   ];
 
   return (
@@ -34,7 +34,7 @@ const SuccessStories = () => {
       <div className="container">
         <Row className="g-5">
           {stories.map((story, index) => (
-            <Col md={6} lg={4} key={index} className="mb-4">
+            <Col md={6} lg={6} key={index} className="mb-4">
               <Card className="success-stories-card">
                 <Card.Img variant="top" src={story.img} />
                 <Card.Body>

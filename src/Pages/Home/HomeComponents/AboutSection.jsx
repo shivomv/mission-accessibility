@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
     const [aboutSectionData, setAboutSectionData] = useState({
-        title: 'Learn More About Our Work And Our Cultural Activities',
-        p1: 'Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet',
-        p2: 'Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.',
-        img1: 'https://placehold.co/400x400',
-        img2: 'https://placehold.co/400x400',
-        img3: 'https://placehold.co/400x400'
+        title: 'Learn More About Our Work',
+        p1: `
+        Mission Accessibility (MA), founded by blind lawyers Rahul Bajaj and Amar Jain, aims to bridge the gap between legal entitlements and implementation for persons with disabilities in India. MA operates through three main verticals: proactive and reactive grievance handling, public awareness campaigns, and assisting institutions to align with disability laws and human rights principles.`,
+        p2: `They engage in policy advocacy and community-driven solutions, focusing on sectors like education and employment. MA also provides training on accessibility standards and has achieved legal victories promoting disability rights. While their primary focus is India, MA collaborates internationally to promote disability-friendly practices, aiming for global accessibility and inclusion.`,
+        img1: 'img/Group1.jpeg',
+        img2: 'img/Group2.jpeg',
+        img3: 'img/Group3.jpeg'
     })
 
     return (
@@ -18,10 +19,10 @@ const AboutSection = () => {
                     <div className="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <img src={aboutSectionData.img1} alt="" className="img-fluid w-75 rounded-circle bg-light p-3" />
+                                <img src={aboutSectionData.img1} alt="" className="img-fluid w-90 h-100 rounded-circle bg-light p-3" />
                             </div>
                             <div className="col-6 text-start" style={{ marginTop: '-150px' }}>
-                                <img src={aboutSectionData.img2} alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />
+                                <img src={aboutSectionData.img2} alt="" className="img-fluid w-100 h-100 rounded-circle bg-light p-3" />
                             </div>
                             <div className="col-6 text-end" style={{ marginTop: '-150px' }}>
                                 <img src={aboutSectionData.img3} alt="" className="img-fluid w-100 rounded-circle bg-light p-3" />

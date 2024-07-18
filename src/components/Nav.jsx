@@ -21,7 +21,8 @@ const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
       <NavLink to="/" className="navbar-brand">
-        <h1 className="m-0 text-primary text-uppercase">Logo</h1>
+        {/* <h1 className="m-0 text-primary text-uppercase">Logo</h1> */}
+        <img src="img/MALogo.png" height={50}/>
       </NavLink>
       <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span className="navbar-toggler-icon"></span>

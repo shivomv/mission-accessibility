@@ -2,39 +2,39 @@ import React from 'react';
 
 const TeamSection = () => {
   const  teamData ={
-        "sectionTitle": "Meet Our Team",
-        "sectionDescription": "Learn more about the dedicated educators who make a difference in our community.",
+        "sectionTitle": "Meet Our Founders",
+        // "sectionDescription": "Learn more about the dedicated educators who make a difference in our community.",
         "members": [
             { 
-                "name": "Name", 
-                "designation": "designation", 
-                "image": "https://placehold.co/400x400", 
+                "name": "Amar Jain", 
+                "designation": "Founder", 
+                "image": "img/founder/amarjaincasual.jpeg", 
                 "social": { 
-                    "facebook": "#", 
-                    "twitter": "#", 
-                    "instagram": "#" 
+                    // "facebook": "#", 
+                    "twitter": "https://x.com/amarjain2006", 
+                    "linkedin": "https://www.linkedin.com/in/amarjain/" 
                 } 
             },
             { 
-                "name": "Name", 
-                "designation": "designation",  
-                "image": "https://placehold.co/400x400", 
+                "name": "Rahul Bajaj", 
+                "designation": "Co-Founder",  
+                "image": "img/founder/RahulBajaj.jpeg", 
                 "social": { 
-                    "facebook": "#", 
-                    "twitter": "#", 
-                    "instagram": "#" 
+                    // "facebook": "#", 
+                    "twitter": "https://x.com/Rahul400", 
+                    "linkedin": "https://www.linkedin.com/in/rahul-bajaj-13002469/" 
                 } 
             },
-            { 
-                "name": "Name", 
-                "designation": "designation", 
-                "image": "https://placehold.co/400x400", 
-                "social": { 
-                    "facebook": "#", 
-                    "twitter": "#", 
-                    "instagram": "#" 
-                } 
-            }
+            // { 
+            //     "name": "Name", 
+            //     "designation": "designation", 
+            //     "image": "https://placehold.co/400x400", 
+            //     "social": { 
+            //         "facebook": "#", 
+            //         "twitter": "#", 
+            //         "instagram": "#" 
+            //     } 
+            // }
         ]
     }
 
@@ -51,7 +51,7 @@ const TeamSection = () => {
                 <div className="row g-4">
                     {/* Team member */}
                     {members.map((member, index) => (
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" key={index}>
+                    <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s" key={index}>
                         <div className="team-item">
                             {/* <img className="img-fluid rounded  w-100" src={member.image} alt="member 1" /> */}
                             <div className="team-text w-80">
@@ -62,9 +62,8 @@ const TeamSection = () => {
                                 <h3>{member.name}</h3>
                                 <p>{member.designation}</p>
                                 <div className="d-flex align-items-center">
-                                    <a className="btn btn-square btn-primary mx-1" href={member.social.facebook}><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href={member.social.twitter}><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href={member.social.instagram}><i className="fab fa-instagram"></i></a>
+                                    <a className="btn btn-square btn-primary mx-1" href={member.social.twitter} target='_blank'><i className="fab fa-twitter" ></i></a>
+                                    <a className="btn btn-square btn-primary mx-1" href={member.social.linkedin} target='_blank'><i className="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>

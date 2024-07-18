@@ -21,32 +21,32 @@ const About = () => {
     {
       name: 'Rahul Bajaj',
       description: 'Rahul Bajaj is a seasoned legal practitioner focused on disability rights and digital accessibility.',
-      imgSrc: 'https://placehold.co/200x200'
+      imgSrc: 'img/founder/RahulBajaj.jpeg'
     },
     {
       name: 'Amar Jain',
       description: 'Amar Jain is a dedicated advocate for the rights of individuals with disabilities, specializing in legal and accessibility issues.',
-      imgSrc: 'https://placehold.co/200x200'
+      imgSrc: 'img/founder/amarjaincasual.jpeg'
     }
   ];
 
-  const legalDocuments = [
-    {
-      type: 'Image',
-      src: 'https://placehold.co/800x600', // Replace with your legal document image URL
-      alt: 'Legal Document 1'
-    },
-    {
-      type: 'Image',
-      src: 'https://placehold.co/800x600', // Replace with your legal document image URL
-      alt: 'Legal Document 1'
-    },
-    {
-      type: 'PDF',
-      src: 'https://example.com/legal_document.pdf', // Replace with your legal document PDF URL
-      alt: 'Legal Document 2'
-    }
-  ];
+  // const legalDocuments = [
+  //   {
+  //     type: 'Image',
+  //     src: 'https://placehold.co/800x600', // Replace with your legal document image URL
+  //     alt: 'Legal Document 1'
+  //   },
+  //   {
+  //     type: 'Image',
+  //     src: 'https://placehold.co/800x600', // Replace with your legal document image URL
+  //     alt: 'Legal Document 1'
+  //   },
+  //   {
+  //     type: 'PDF',
+  //     src: 'https://example.com/legal_document.pdf', // Replace with your legal document PDF URL
+  //     alt: 'Legal Document 2'
+  //   }
+  // ];
 
   return (
     <>
@@ -89,7 +89,7 @@ const About = () => {
         {/* Overview End */}
 
         {/* Legal Documents Start */}
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
           <div className="container">
             <h2 className="mb-4">Legal Documents</h2>
             <div className="row g-4">
@@ -107,7 +107,7 @@ const About = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Legal Documents End */}
 
         {/* Founders Start */}
