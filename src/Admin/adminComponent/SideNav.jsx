@@ -1,58 +1,54 @@
-// src/components/SideNav.jsx
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
-import { FaTachometerAlt, FaCogs, FaBars, FaFileAlt } from 'react-icons/fa';
-import './SideNav.css';
+// src/components/Sidebar.jsx
+import React from 'react';
+import {
+    CDBSidebar,
+    CDBSidebarContent,
+    CDBSidebarFooter,
+    CDBSidebarHeader,
+    CDBSidebarMenu,
+    CDBSidebarMenuItem,
+} from 'cdbreact';
+import { Link, NavLink } from 'react-router-dom';
 
 const SideNav = () => {
-    const [isCollapsed, setIsCollapsed] = useState(false);
-    const [isMobileOpen, setIsMobileOpen] = useState(false);
-    const navigate = useNavigate();
-
-    const toggleCollapse = () => {
-        setIsCollapsed(!isCollapsed);
-    };
-
-    const toggleMobile = () => {
-        setIsMobileOpen(!isMobileOpen);
-    };
-
-    const handleBrandClick = () => {
-        navigate('/admin');
-    };
-
     return (
-        <>
-            <div className={`d-flex sidenav flex-column ${isCollapsed ? 'collapsed' : ''} ${isMobileOpen ? 'mobile-open' : ''}`} id="sidebar-wrapper">
-                <Navbar  className="d-flex flex-column p-0">
-                    <Navbar.Brand onClick={handleBrandClick} className="cursor-pointer d-flex align-items-center justify-content-between p-3">
-                        <span>{!isCollapsed && 'Admin Panel'}</span>
-                        <FaBars onClick={toggleCollapse} />
-                    </Navbar.Brand>
-                    <Nav className="flex-column">
-                        <Nav.Link as={Link} to="/admin" className="d-flex align-items-center p-3">
-                            <FaTachometerAlt className="me-2" />
-                            {!isCollapsed && <span>Dashboard</span>}
-                        </Nav.Link>
+        <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+            <CDBSidebar textColor="#fff" backgroundColor="#333">
+                <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+                    <Link to="/admin" className="text-decoration-none" style={{ color: 'inherit' }}>
+                       Admin
+                    </Link>
+                </CDBSidebarHeader>
 
-                        <Nav.Link as={Link} to="/admin/manage-pages" className="d-flex align-items-center p-3">
-                            <FaFileAlt className="me-2" />
-                            {!isCollapsed && <span>Manage Pages</span>}
-                        </Nav.Link>
+                <CDBSidebarContent className="sidebar-content">
+                    <CDBSidebarMenu>
+                        <NavLink  to="/admin" activeclassname="activeClicked">
+                            <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
+                        </NavLink>
+                        <NavLink  to="/admin/tables" activeclassname="activeClicked">
+                            <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
+                        </NavLink>
+                        <NavLink  to="/admin/profile" activeclassname="activeClicked">
+                            <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
+                        </NavLink>
+                        <NavLink  to="/admin/analytics" activeclassname="activeClicked">
+                            <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
+                        </NavLink>
 
-                        {/* Add more links as needed */}
-                        <Nav.Link as={Link} to="/admin/settings" className="d-flex align-items-center p-3">
-                            <FaCogs className="me-2" />
-                            {!isCollapsed && <span>Settings</span>}
-                        </Nav.Link>
-                    </Nav>
-                </Navbar>
-            </div>
-            <div className="mobile-toggle" onClick={toggleMobile}>
-                <FaBars />
-            </div>
-        </>
+                    </CDBSidebarMenu>
+                </CDBSidebarContent>
+
+                {/* <CDBSidebarFooter style={{ textAlign: 'center' }}>
+                    <div
+                        style={{
+                            padding: '20px 5px',
+                        }}
+                    >
+                        Sidebar Footer
+                    </div>
+                </CDBSidebarFooter> */}
+            </CDBSidebar>
+        </div>
     );
 };
 

@@ -1,0 +1,33 @@
+.my-masonry-grid {
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your images and their info */
+  .image-item {
+    margin-bottom: 30px;
+  }
+  
+  .image-info {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .image-date {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .image-description {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+  }
+  

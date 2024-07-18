@@ -1,0 +1,11 @@
+.strategy-item:hover h4 {
+    color: #fff; /* Change h4 text color on hover */
+  }
+  
+  .strategy-item:hover {
+    cursor: pointer; /* Change cursor on hover */
+    color: var(--light) !important; /* Change text color on hover */
+    background: var(--primary) !important; /* Change background color on hover */
+    transition: all 0.5s; /* Add transition effect for smooth hover */
+  }
+  

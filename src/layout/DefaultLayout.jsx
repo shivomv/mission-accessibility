@@ -11,6 +11,7 @@ const About = React.lazy(() => import('../Pages/About/About'));
 const ImageGallery = React.lazy(() => import('../Pages/Gallery/ImageGallery'));
 const VideoGallery = React.lazy(() => import('../Pages/Gallery/VideoGallery'));
 const Contact = React.lazy(() => import('../Pages/Contact/Contact'));
+const Services = React.lazy(() => import('../Pages/services/Services'));
 
 const Spinner = () => (
     <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -23,20 +24,23 @@ const Spinner = () => (
 const DefaultLayout = () => {
     return (
         <>
-            <Nav />
-            <Suspense fallback={<Spinner />}>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/image-gallery" element={<ImageGallery />} />
-                    <Route path="/video-gallery" element={<VideoGallery />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="*" element={<Page404 />} />
-                </Routes>
-            </Suspense>
-            <BackToTop />
-            <Footer />
+            <div>
+                <Nav />
+                <Suspense fallback={<Spinner />}>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/image-gallery" element={<ImageGallery />} />
+                        <Route path="/video-gallery" element={<VideoGallery />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="*" element={<Page404 />} />
+                    </Routes>
+                </Suspense>
+                <BackToTop />
+                <Footer />
+            </div>
         </>
     );
 };

@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import DefaultLayout from './layout/DefaultLayout';
 import AdminLayout from './Admin/AdminLayout/AdminLayout';
 import Login from './Admin/AdminPages/other/Login';

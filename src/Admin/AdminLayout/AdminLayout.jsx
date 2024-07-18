@@ -1,4 +1,3 @@
-// src/layouts/AdminLayout.jsx
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AdminNav from '../adminComponent/AdminNav';
@@ -8,10 +7,10 @@ import SideNav from '../adminComponent/SideNav';
 
 // Lazy loading import for all components
 const AdminDashboard = React.lazy(() => import('./../AdminPages/AdminDashboard'));
-const ManagePages = React.lazy(() => import('../AdminPages/ManagePages/ManagePages'));
-const NavManagement = React.lazy(() => import('../AdminPages/ManagePages/ManageComponents/NavManagement'));
-// const AdminSettings = React.lazy(() => import('../Pages/Admin/Settings'));
-// Add more admin routes as needed
+const ManageHome = React.lazy(() => import('../AdminPages/ManagePages/ManageHome')); // Adjusted path
+const ManageAbout = React.lazy(() => import('../AdminPages/ManagePages/ManageAbout')); // Adjusted path
+const ManageServices = React.lazy(() => import('../AdminPages/ManagePages/ManageServices')); // Adjusted path
+const ManageContact = React.lazy(() => import('../AdminPages/ManagePages/ManageContact')); // Adjusted path
 
 const Spinner = () => (
     <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -25,15 +24,17 @@ const AdminLayout = ({ isAuthenticated }) => {
     return (
         <div className="d-flex bg-white">
             <SideNav />
-            <div className="content-container">
+            <div className="content-container" style={{height:'100vh', overflowY:'scroll'}}>
                 <AdminNav />
                 <Suspense fallback={<Spinner />}>
                     <Routes>
                         <Route path="/" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminDashboard} />} />
-                        <Route path="/manage-pages" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManagePages} />} />
-                        <Route path="/manage-nav" element={<PrivateRoute isAuthenticated={isAuthenticated} element={NavManagement} />} />
-                        {/* <Route path="/admin/settings" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminSettings} />} /> */}
+                        <Route path="/manage/Home" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManageHome} />} />
+                        <Route path="/manage/about" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManageAbout} />} />
+                        <Route path="/manage/services" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManageServices} />} />
+                        <Route path="/manage/contact" element={<PrivateRoute isAuthenticated={isAuthenticated} element={ManageContact} />} />
                         {/* Add more admin routes here */}
+                        {/* <Route path="/admin/settings" element={<PrivateRoute isAuthenticated={isAuthenticated} element={AdminSettings} />} /> */}
                         {/* <Route path="*" element={<Page404 />} /> */}
                     </Routes>
                 </Suspense>

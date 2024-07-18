@@ -5,7 +5,7 @@ import { Dropdown } from 'react-bootstrap';
 
 const AdminNav = () => {
   return (
-    <nav className="bg-light navbar navbar-expand-lg navbar-dark sticky-top px-4 px-lg-5 py-lg-0">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top px-4 mb-3 px-lg-5 py-lg-0" style={{backgroundColor:"#333"}}>
       <NavLink to="/admin/dashboard" className="navbar-brand">
         <h3 className="m-0 text-primary text-uppercase"><i className="fa fa-shield-alt me-3"></i>Admin Panel</h3>
       </NavLink>
