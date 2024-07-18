@@ -11,25 +11,25 @@ const Services = () => {
 
   const servicesData = [
     {
-      imgSrc: 'https://placehold.co/400x400',
+      imgSrc: 'img/services/DigitalAccessibility.jpeg',
       title: 'Digital Accessibility Audits',
       description: 'We provide comprehensive audits to ensure your digital platforms are accessible to all users, including those with disabilities.',
       iconClass: 'bi bi-check-circle'
     },
     {
-      imgSrc: 'https://placehold.co/400x400',
+      imgSrc: 'img/services/LegalAdvocacy.jpg',
       title: 'Legal Advocacy',
       description: 'Our legal experts advocate for the rights of individuals with disabilities, ensuring compliance with accessibility laws and regulations.',
       iconClass: 'bi bi-gavel'
     },
     {
-      imgSrc: 'https://placehold.co/400x400',
+      imgSrc: 'img/services/TrainingandWorkshops.jpg',
       title: 'Training and Workshops',
       description: 'We offer training sessions and workshops to educate organizations on best practices for digital accessibility and inclusion.',
       iconClass: 'bi bi-journal'
     },
     {
-      imgSrc: 'https://placehold.co/400x400',
+      imgSrc: 'img/services/ConsultingServices.jpg',
       title: 'Consulting Services',
       description: 'Our consulting services provide tailored solutions to help organizations achieve their accessibility goals.',
       iconClass: 'bi bi-people'

@@ -6,65 +6,65 @@ import './imageGallery.css'; // Create this CSS file for custom styles
 
 const images = [
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp',
+    src: 'img/imgabout1.jpeg',
     alt: 'Boat on Calm Water',
     date: '2023-07-01',
     description: 'This is a description of image 1'
   },
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp',
+    src: 'img/imgabout2.jpeg',
     alt: 'Wintry Mountain Landscape',
     date: '2023-07-02',
     description: 'This is a description of image 2'
   },
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp',
+    src: 'img/imgabout3.jpeg',
     alt: 'Mountains in the Clouds',
     date: '2023-07-03',
     description: 'This is a description of image 3'
   },
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp',
+    src: 'img/Group1.jpeg',
     alt: 'Boat on Calm Water',
     date: '2023-07-04',
     description: 'This is a description of image 4'
   },
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp',
+    src: 'img/Group2.jpeg',
     alt: 'Waves at Sea',
     date: '2023-07-05',
     description: 'This is a description of image 5'
   },
   {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+    src: 'img/Group3.jpeg',
     alt: 'Yosemite National Park',
     date: '2023-07-06',
     description: 'This is a description of image 6'
   },
-  {
-      src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
-      alt: 'Yosemite National Park',
-    date: '2023-07-06',
-    description: 'This is a description of image 6'
-  },
-  {
-    src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
-    alt: 'Yosemite National Park',
-    date: '2023-07-06',
-    description: 'This is a description of image 6'
-},
-{
-  src: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp',
-  alt: 'Waves at Sea',
-  date: '2023-07-05',
-  description: 'This is a description of image 5'
-},
-{
-  src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
-  alt: 'Yosemite National Park',
-  date: '2023-07-06',
-  description: 'This is a description of image 6'
-},
+//   {
+//       src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+//       alt: 'Yosemite National Park',
+//     date: '2023-07-06',
+//     description: 'This is a description of image 6'
+//   },
+//   {
+//     src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+//     alt: 'Yosemite National Park',
+//     date: '2023-07-06',
+//     description: 'This is a description of image 6'
+// },
+// {
+//   src: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp',
+//   alt: 'Waves at Sea',
+//   // date: '2023-07-05',
+//   // description: 'This is a description of image 5'
+// },
+// {
+//   src: 'https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp',
+//   alt: 'Yosemite National Park',
+//   // date: '2023-07-06',
+//   // description: 'This is a description of image 6'
+// },
   // Add more images as needed
 ];
 
@@ -98,10 +98,10 @@ const ImageGallery = () => {
                     className="img-fluid rounded shadow-sm"
                     alt={image.alt}
                   />
-                  <div className="image-info">
+                  {/* <div className="image-info">
                     <p className="image-date">{image.date}</p>
                     <p className="image-description">{image.description}</p>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </Masonry>

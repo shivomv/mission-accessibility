@@ -4,30 +4,30 @@ import ContactFormComponent from "../../components/ContactFormComponent";
 
 const Contact = () => {
   const [questions, setQuestions] = useState([
-    {
-      id: 1,
-      question: "What are your office hours?",
-      answer:
-        "Our office hours are Monday to Friday, from 9:00 AM to 5:00 PM.",
-    },
-    {
-      id: 2,
-      question: "How can I volunteer with your organization?",
-      answer:
-        "You can volunteer by visiting our office or contacting us via email or phone. We offer various volunteer opportunities throughout the year.",
-    },
-    {
-      id: 3,
-      question: "Where can I find information about your upcoming events?",
-      answer:
-        "Information about our upcoming events can be found on our website's Events page or by following our social media channels.",
-    },
-    {
-      id: 4,
-      question: "Do you provide accessibility services?",
-      answer:
-        "Yes, we provide accessibility services for individuals with disabilities. Please contact us for more information or specific requests.",
-    },
+    // {
+    //   id: 1,
+    //   question: "What are your office hours?",
+    //   answer:
+    //     "Our office hours are Monday to Friday, from 9:00 AM to 5:00 PM.",
+    // },
+    // {
+    //   id: 2,
+    //   question: "How can I volunteer with your organization?",
+    //   answer:
+    //     "You can volunteer by visiting our office or contacting us via email or phone. We offer various volunteer opportunities throughout the year.",
+    // },
+    // {
+    //   id: 3,
+    //   question: "Where can I find information about your upcoming events?",
+    //   answer:
+    //     "Information about our upcoming events can be found on our website's Events page or by following our social media channels.",
+    // },
+    // {
+    //   id: 4,
+    //   question: "Do you provide accessibility services?",
+    //   answer:
+    //     "Yes, we provide accessibility services for individuals with disabilities. Please contact us for more information or specific requests.",
+    // },
   ]);
 
   const [userQuestion, setUserQuestion] = useState("");
@@ -85,23 +85,23 @@ const Contact = () => {
                   information below:
                 </p>
                 <ul className="list-unstyled">
-                  <li className="mb-3">
+                  {/* <li className="mb-3">
                     <i className="fa fa-map-marker-alt text-primary me-3"></i>
                     <span>
                       NGO Name Headquarters, Street Address, City, Country
                     </span>
-                  </li>
+                  </li> */}
                   <li className="mb-3">
                     <i className="fa fa-phone-alt text-primary me-3"></i>
-                    <span>+123 456 7890</span>
+                    <span>+919892622230</span>
                   </li>
                   <li className="mb-3">
                     <i className="fa fa-envelope text-primary me-3"></i>
-                    <span>info@ngoname.org</span>
+                    <span>missionaccessibility@gmail.com</span>
                   </li>
                 </ul>
 
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <a
                     className="btn btn-primary rounded-pill py-3 px-5 me-3"
                     href="#"
@@ -114,7 +114,7 @@ const Contact = () => {
                   >
                     Send Email
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="col-lg-6 mt-5 mt-lg-0">
                 <div className="bg-white p-4 rounded shadow-sm">

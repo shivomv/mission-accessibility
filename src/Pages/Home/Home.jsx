@@ -18,7 +18,7 @@ const Home = () => {
                 <AboutSection />
                 <TeamSection />
                 <SuccessStories/>
-                <SocialMediaFeed />
+                {/* <SocialMediaFeed /> */}
                 <CallToAction />
                 {/* <TestimonialSection /> */}
                 <ContactForm />

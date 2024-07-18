@@ -10,10 +10,10 @@ const Nav = () => {
     { path: '/home', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Services' },
-    { path: '/blog', label: 'Blog' },
+    { path: 'http://blog.missionaccessibility.org', label: 'Blog' },
     { path: '/gallery', label: 'Gallery', subItems: [
       { path: '/image-gallery', label: 'Image Gallery' },
-      { path: '/video-gallery', label: 'Video Gallery' }
+      // { path: '/video-gallery', label: 'Video Gallery' }
     ]},
     { path: '/contact', label: 'Contact Us' }
   ];
@@ -52,7 +52,7 @@ const Nav = () => {
             </React.Fragment>
           ))}
         </div>
-        <NavLink to="/join" className="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i className="fa fa-arrow-right ms-3"></i></NavLink>
+        <NavLink to="/contact" className="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i className="fa fa-arrow-right ms-3"></i></NavLink>
       </div>
     </nav>
   );

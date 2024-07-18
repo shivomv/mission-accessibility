@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import Breadcrumb from '../../components/Breadcrumb';
 import TestimonialSection from '../Home/HomeComponents/TestimonialSection';
+import CallToAction from '../Home/HomeComponents/CallToAction';
 
 const About = () => {
   useEffect(() => {
@@ -9,9 +10,9 @@ const About = () => {
   }, []);
 
   const aboutuspage = {
-    img1: 'https://placehold.co/400x400',
-    img2: 'https://placehold.co/400x400',
-    img3: 'https://placehold.co/400x400',
+    img1: 'img/imgabout1.jpeg',
+    img2: 'img/imgabout2.jpeg',
+    img3: 'img/imgabout3.jpeg',
     title: 'Learn More About Our Work And Our Mission',
     description: 'Mission Accessibility is dedicated to advancing the rights of individuals with disabilities, focusing on digital accessibility. Founded by legal practitioners Rahul Bajaj and Amar Jain, who are blind, we aim to eliminate barriers and ensure full participation for persons with disabilities.',
     description2: "Our mission includes legal advocacy, shaping public narratives, providing resources and guidance, and fostering collaboration among disabled individuals and their organizations to address challenges."
@@ -28,6 +29,41 @@ const About = () => {
       description: 'Amar Jain is a dedicated advocate for the rights of individuals with disabilities, specializing in legal and accessibility issues.',
       imgSrc: 'img/founder/amarjaincasual.jpeg'
     }
+  ];
+
+
+
+  const boards = [
+    {
+      name: 'Justice A.K Sikri,',
+      description: 'Former Judge, Supreme Court of India (Patron-in-Chief).',
+      imgSrc: 'img/boards/JusticeAKSikri.jpeg'
+    },
+    {
+      name: 'Mr. Dipendra Manocha',
+      description: 'Director, Developing Countries, DAISY Consortium.',
+      imgSrc: 'img/boards/MrDipendraManocha.jpeg'
+    },
+    {
+      name: 'Arghya Sengupta',
+      description: 'Founder and Research Director at Vidhi Centre for Legal Policy.',
+      imgSrc: 'img/boards/ArghyaSengupta.jpeg'
+    },
+    {
+      name: 'Nandan Kamath',
+      description: 'Founder and Principal Lawyer at LawNK, co-founder and Managing Trustee of GoSports Foundation, a National Award-winning organization for elite athletes, and co-founder of the Sports and Society Accelerator.',
+      imgSrc: 'img/boards/NandanKamath.jpeg'
+    },
+    {
+      name: 'Dr. Elizabeth Kiss',
+      description: 'Amar Jain is a dedicated advocate for the rights of individuals with disabilities, specializing in legal and accessibility issues.',
+      imgSrc: 'img/boards/DrElizabethKiss.jpeg'
+    },
+    {
+      name: 'Dr. Satendra Singh',
+      description: 'Medical doctor at the University College of Medical Sciences and Guru Tegh Bahadur Hospital, Delhi.',
+      imgSrc: 'img/boards/DrSatendraSingh.jpeg'
+    },
   ];
 
   // const legalDocuments = [
@@ -83,6 +119,7 @@ const About = () => {
         <div className="container-xxl py-5">
           <div className="container">
             <h2 className="mb-4">Overview of Our Organization</h2>
+            <p>Mission Accessibility (MA) is a pioneering organization committed to advancing the rights and opportunities of persons with disabilities (PwDs) in India and globally. Founded by Rahul Bajaj and Amar Jain, both blind lawyers, MA addresses the significant gap between legal entitlements and practical implementation for PwDs through advocacy, awareness, and systemic transformation.</p>
             <p>Founded by Rahul Bajaj and Amar Jain, Mission Accessibility has a rich history of advocating for the rights of individuals with disabilities. Our team comprises dedicated professionals committed to making a difference.</p>
           </div>
         </div>
@@ -140,6 +177,26 @@ const About = () => {
         </div>
         {/* Vision and Mission End */}
 
+
+        {/* Founders Start */}
+        <div className="container-xxl py-5">
+          <div className="container">
+            <h2 className="mb-4">Board of Advisors</h2>
+            <div className="row g-5">
+              {boards.map((founder, index) => (
+                <div className="col-lg-6 wow fadeInUp" data-aos="fade-up" data-aos-delay="100" key={index}>
+                  <div className="d-flex align-items-center">
+                    <img className="img-fluid rounded-circle bg-light p-3" src={founder.imgSrc} alt={founder.name} style={{ width: '100px', height: '100px' }} />
+                    <div className="ms-4">
+                      <h4>{founder.name}</h4>
+                      <p>{founder.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
         {/* Work With Us Start */}
         <div className="container-xxl py-5">
           <div className="container">
@@ -150,11 +207,11 @@ const About = () => {
         {/* Work With Us End */}
 
         {/* Testimonials Start */}
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         {/* Testimonials End */}
 
         {/* Call To Action Start */}
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
           <div className="container">
             <div className="bg-light rounded">
               <div className="row g-0">
@@ -173,7 +230,8 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <CallToAction />
         {/* Call To Action End */}
       </div>
     </>
